@@ -111,7 +111,7 @@ pub use self::error::{Error, ErrorCode, HandshakeError};
 mod async_callbacks;
 mod bio;
 mod callbacks;
-mod cert_compression;
+pub mod cert_compression;
 mod connector;
 mod error;
 mod mut_only;
