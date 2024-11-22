@@ -57,7 +57,7 @@
 //!     }
 //! }
 //! ```
-use cert_compression::CertCompressionAlgorithm;
+pub use cert_compression::CertCompressionAlgorithm;
 use foreign_types::{ForeignType, ForeignTypeRef, Opaque};
 use libc::{c_char, c_int, c_long, c_uchar, c_uint, c_void};
 use once_cell::sync::Lazy;
@@ -111,7 +111,7 @@ pub use self::error::{Error, ErrorCode, HandshakeError};
 mod async_callbacks;
 mod bio;
 mod callbacks;
-pub mod cert_compression;
+mod cert_compression;
 mod connector;
 mod error;
 mod mut_only;
