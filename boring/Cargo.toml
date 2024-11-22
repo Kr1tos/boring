@@ -71,6 +71,7 @@ kx-client-pq-preferred = ["kx-safe-default", "kx-client-pq-supported"]
 kx-client-nist-required = ["kx-safe-default"]
 
 [dependencies]
+brotli = "7.0.0"
 bitflags = { workspace = true }
 foreign-types = { workspace = true }
 once_cell = { workspace = true }
